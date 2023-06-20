@@ -1,0 +1,156 @@
+{
+  "id": "2c34c013-620b-4897-8bf1-f6e0762fa474",
+  "version": "2.0",
+  "name": "Test",
+  "url": "http://localhost/online-voting-in-php/admin.php",
+  "tests": [{
+    "id": "3417709e-8cb7-4c55-8502-fddff0a702e1",
+    "name": "hello app",
+    "commands": [{
+      "id": "95cbdad4-524a-4cdc-86d2-9a6ec29ccba1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/online-voting-in-php/admin.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce47f3eb-5967-4c35-9a72-daf4c6393986",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c662da85-618c-4c6a-9330-6dfef756936a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "a7883e25-d214-4a10-b12c-d146b4bb03ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b546c24-d799-46b8-b59b-0280d0d36cc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wrapper",
+      "targets": [
+        ["css=.wrapper", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05c1f281-80f6-42d1-9224-e5487dd59442",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//span[contains(.,'Password Invalid')]",
+      "targets": [
+        ["css=.help-block", "css:finder"],
+        ["xpath=//form/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Password Invalid')]", "xpath:innerText"]
+      ],
+      "value": "Password Invalid"
+    }, {
+      "id": "d1431843-b0c9-46c4-aacc-8fcd56462e46",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f070f299-970e-471a-a5de-1df8fdb653c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "de83ebe7-0b47-453e-b236-b434553b97c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fa1348d-fe58-40d6-9053-f1697c674d74",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Manage Users",
+      "targets": [
+        ["linkText=Manage Users", "linkText"],
+        ["css=.col-md-12:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Manage Users')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-approval.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Manage Users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd6439f2-b260-476a-886d-2d78d5e31468",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//td[9]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Disapprove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9062d61-3b8c-418a-aec2-9c93382564b9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//em[contains(.,'No records were found.')]",
+      "targets": [
+        ["css=em", "css:finder"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'No records were found.')]", "xpath:innerText"]
+      ],
+      "value": "No records were found."
+    }]
+  }],
+  "suites": [{
+    "id": "53454c31-1d23-4adf-8e8b-800690308dc1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3417709e-8cb7-4c55-8502-fddff0a702e1"]
+  }],
+  "urls": ["http://10.1.22.42/", "https://supdeweb.com/strasbourg", "https://supdeweb.com/formations", "http://localhost/online-voting-in-php/admin.php"],
+  "plugins": []
+}

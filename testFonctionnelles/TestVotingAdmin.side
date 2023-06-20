@@ -1,0 +1,515 @@
+{
+  "id": "2c34c013-620b-4897-8bf1-f6e0762fa474",
+  "version": "2.0",
+  "name": "Test",
+  "url": "http://localhost/online-voting-in-php/admin.php",
+  "tests": [{
+    "id": "3417709e-8cb7-4c55-8502-fddff0a702e1",
+    "name": "hello app",
+    "commands": [{
+      "id": "95cbdad4-524a-4cdc-86d2-9a6ec29ccba1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/online-voting-in-php/admin.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce47f3eb-5967-4c35-9a72-daf4c6393986",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c662da85-618c-4c6a-9330-6dfef756936a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "a7883e25-d214-4a10-b12c-d146b4bb03ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b546c24-d799-46b8-b59b-0280d0d36cc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wrapper",
+      "targets": [
+        ["css=.wrapper", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05c1f281-80f6-42d1-9224-e5487dd59442",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//span[contains(.,'Password Invalid')]",
+      "targets": [
+        ["css=.help-block", "css:finder"],
+        ["xpath=//form/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Password Invalid')]", "xpath:innerText"]
+      ],
+      "value": "Password Invalid"
+    }, {
+      "id": "d1431843-b0c9-46c4-aacc-8fcd56462e46",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f070f299-970e-471a-a5de-1df8fdb653c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "de83ebe7-0b47-453e-b236-b434553b97c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7af63c8-1cb2-4fb8-8d98-241436803808",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Manage Candidates",
+      "targets": [
+        ["linkText=Manage Candidates", "linkText"],
+        ["css=.col-md-12:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Manage Candidates')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates-add.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Manage Candidates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d80f339-d4aa-4ebd-adab-c741ce8487e0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(1) .glyphicon-trash",
+      "targets": [
+        ["css=tr:nth-child(1) .glyphicon-trash", "css:finder"],
+        ["xpath=//a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd57e8ac-8887-4c83-9925-c2febcc2c163",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(1) .glyphicon-trash",
+      "targets": [
+        ["css=tr:nth-child(1) .glyphicon-trash", "css:finder"],
+        ["xpath=//a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95c3beb9-41e5-4c7c-b511-bba410d8ef54",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(1) .glyphicon-pencil",
+      "targets": [
+        ["css=tr:nth-child(1) .glyphicon-pencil", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "098f6d63-4fac-400b-99bd-352d1fd2885f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(1) .glyphicon-pencil",
+      "targets": [
+        ["css=tr:nth-child(1) .glyphicon-pencil", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f954ecd3-b508-484a-9dec-ea4875fc0681",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(1) .glyphicon-eye-open",
+      "targets": [
+        ["css=tr:nth-child(1) .glyphicon-eye-open", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94fc063f-a688-4571-9e84-4b77e15a2905",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .glyphicon-eye-open",
+      "targets": [
+        ["css=tr:nth-child(1) .glyphicon-eye-open", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0ceb2f6-1bea-49ea-a156-5693c5972e0e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group:nth-child(2) > .form-control-static",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control-static", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Candidate A')]", "xpath:innerText"]
+      ],
+      "value": "Candidate A"
+    }, {
+      "id": "c16bb012-1360-41c5-9f9b-e79809a80e61",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group:nth-child(3) > .form-control-static",
+      "targets": [
+        ["css=.form-group:nth-child(3) > .form-control-static", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Party 1')]", "xpath:innerText"]
+      ],
+      "value": "Party 1"
+    }, {
+      "id": "04be66f0-2772-4205-ae8c-9f985a5533c1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group:nth-child(4) > .form-control-static",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .form-control-static", "css:finder"],
+        ["xpath=//div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'45')]", "xpath:innerText"]
+      ],
+      "value": "45"
+    }, {
+      "id": "865dfd06-437c-4944-84ad-2618669adb79",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group:nth-child(5) > .form-control-static",
+      "targets": [
+        ["css=.form-group:nth-child(5) > .form-control-static", "css:finder"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Male')]", "xpath:innerText"]
+      ],
+      "value": "Male"
+    }, {
+      "id": "4920ec05-a3ba-4322-b3d3-110dfb92bdf2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates-add.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcfd49f9-1f0d-48dc-a0e8-ea6909f12919",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(1) .glyphicon-pencil",
+      "targets": [
+        ["css=tr:nth-child(1) .glyphicon-pencil", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8695ae02-f03b-4b11-8a6a-4cc0ad8920a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6134042d-e384-4607-b5da-19c220c04a8d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancel",
+      "targets": [
+        ["linkText=Cancel", "linkText"],
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancel')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'admin.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd0b7b8f-63a6-45ee-85a7-905a9810e435",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1973835-44f5-40cd-9f8d-da1dea0319d0",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "0ddc799d-842d-4834-98c3-32f7325b5937",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cbec379-dff2-4f0f-9b2f-72d7ca792309",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Manage Candidates",
+      "targets": [
+        ["linkText=Manage Candidates", "linkText"],
+        ["css=.col-md-12:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Manage Candidates')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates-add.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Manage Candidates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04fe4a40-620c-4cb5-94bf-c5b234757895",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Manage Users",
+      "targets": [
+        ["linkText=Manage Users", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Manage Users')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-approval.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Manage Users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18ddd275-ac80-410e-a866-46ac5d4f27bc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//em[contains(.,'No records were found.')]",
+      "targets": [
+        ["css=em", "css:finder"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'No records were found.')]", "xpath:innerText"]
+      ],
+      "value": "No records were found."
+    }, {
+      "id": "c90cbf24-a835-4fa0-be18-87a3b5c8a56f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Manage Candidates",
+      "targets": [
+        ["linkText=Manage Candidates", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Manage Candidates')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates-add.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Manage Candidates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "517badb3-ab25-4027-8be8-fd6e87b08217",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Candidate",
+      "targets": [
+        ["linkText=Add New Candidate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Add New Candidate')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'create.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Candidate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab40dc2a-998f-4489-b49a-b3aa7abc2a78",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc075dea-828c-4916-97e7-45bf36816822",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "candidate"
+    }, {
+      "id": "06132073-963f-4ac2-a41b-1648ddf8d471",
+      "comment": "",
+      "command": "click",
+      "target": "name=party",
+      "targets": [
+        ["name=party", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='party']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f859848-cef5-4799-8143-0d180c6f7b64",
+      "comment": "",
+      "command": "type",
+      "target": "name=party",
+      "targets": [
+        ["name=party", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='party']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "party 5"
+    }, {
+      "id": "399b6659-df03-4dd6-9361-83642f4d34a9",
+      "comment": "",
+      "command": "click",
+      "target": "name=age",
+      "targets": [
+        ["name=age", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='age']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcfe5cfe-f74c-49be-aa39-9f12a09be20f",
+      "comment": "",
+      "command": "type",
+      "target": "name=age",
+      "targets": [
+        ["name=age", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='age']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "fccad880-5117-4457-a4b0-3538643241e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=male",
+      "targets": [
+        ["id=male", "id"],
+        ["name=gender", "name"],
+        ["css=#male", "css:finder"],
+        ["xpath=//input[@id='male']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cb7ebb1-7c07-432d-a8aa-345bf5b14268",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "177173aa-1b88-4f1b-afa7-bcc2e474eeae",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(4) .glyphicon-trash",
+      "targets": [
+        ["css=tr:nth-child(4) .glyphicon-trash", "css:finder"],
+        ["xpath=//tr[4]/td[6]/a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3510622c-dc9c-46b6-8f41-95f8b83ab345",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .glyphicon-trash",
+      "targets": [
+        ["css=tr:nth-child(4) .glyphicon-trash", "css:finder"],
+        ["xpath=//tr[4]/td[6]/a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a1d8278-6d4e-4c45-9f83-d3811d1f4550",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Yes']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "53454c31-1d23-4adf-8e8b-800690308dc1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3417709e-8cb7-4c55-8502-fddff0a702e1"]
+  }],
+  "urls": ["http://10.1.22.42/", "https://supdeweb.com/strasbourg", "https://supdeweb.com/formations", "http://localhost/online-voting-in-php/admin.php"],
+  "plugins": []
+}

@@ -1,0 +1,365 @@
+{
+  "id": "f22d13d3-5f62-48ab-86de-4ccd0c0a9327",
+  "version": "2.0",
+  "name": "TestVoting",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "9ee71ed0-9b0e-4c14-bce5-fb3516f5ead9",
+    "name": "Untitled",
+    "commands": [{
+      "id": "69d8a099-c0ea-4b40-8835-eca906046aba",
+      "comment": "",
+      "command": "open",
+      "target": "/online-voting-in-php-main/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7d75528-aec6-48a7-8c7c-b0c3b5b16a0e",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad9f468-3e26-4093-8640-b23efdb9a8dc",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testSup"
+    }, {
+      "id": "48cb3a98-60c5-449e-863f-93363c17106c",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b336d565-9977-4b15-8569-7256d31bc1e1",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testsup"
+    }, {
+      "id": "27c2a1db-e54a-4cd3-808e-d382e9669d54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c78660f-e6df-4825-a641-3ad7caea57a5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vote a Candidate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d679b956-93bf-4b73-9995-bad78ede729e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Reset Your Password",
+      "targets": [
+        ["linkText=Reset Your Password", "linkText"],
+        ["css=.btn-warning", "css:finder"],
+        ["xpath=//a[contains(text(),'Reset Your Password')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'reset-password.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Reset Your Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0ca1e77-e14f-45f9-8d17-20c59e231011",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Sign Out of Your Account",
+      "targets": [
+        ["linkText=Sign Out of Your Account", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Out of Your Account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'logout.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Out of Your Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29d15734-86fb-4be0-8e21-28ae3e7aa5db",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reset Your Password",
+      "targets": [
+        ["linkText=Reset Your Password", "linkText"],
+        ["css=.btn-warning", "css:finder"],
+        ["xpath=//a[contains(text(),'Reset Your Password')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'reset-password.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Reset Your Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06e00952-b41a-4e1c-9dd8-7c4e88f01d29",
+      "comment": "",
+      "command": "click",
+      "target": "name=new_password",
+      "targets": [
+        ["name=new_password", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='new_password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "654bee1e-cf75-4ba6-afda-422df9f13df2",
+      "comment": "",
+      "command": "type",
+      "target": "name=new_password",
+      "targets": [
+        ["name=new_password", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='new_password']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testsup"
+    }, {
+      "id": "a68a621d-0735-404b-912b-9ac32f6fb3e1",
+      "comment": "",
+      "command": "type",
+      "target": "name=confirm_password",
+      "targets": [
+        ["name=confirm_password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='confirm_password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testsup"
+    }, {
+      "id": "2d06819c-5d2a-4e1e-af15-c5083550a676",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "557d2743-6b01-4cc5-beb9-6e4ff4be091a",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3134d424-99ff-45a1-a667-c25d3ddd39d2",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testSup"
+    }, {
+      "id": "d3cd9866-7e24-4a32-aef6-090b34553bcb",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "416af732-9971-4fec-9f41-9ed9db1ccf13",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testsup"
+    }, {
+      "id": "32c78a46-86e5-465a-9d71-67657e9f67dc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a74d5fe5-ea94-489a-b861-3be67c5c4325",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Out of Your Account",
+      "targets": [
+        ["linkText=Sign Out of Your Account", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Out of Your Account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'logout.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Out of Your Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6809445-83d7-451c-bdbf-ae484031439b",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8831cb4f-9b38-4bec-9f08-04cf55ff1570",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testSup"
+    }, {
+      "id": "db0a3948-199c-4cce-b181-e02adbcc305a",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ff16202-9010-4a5a-b1d7-2177ac0009b1",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testsup"
+    }, {
+      "id": "42bda8f7-3bef-4e8d-b824-46a4686e32b8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0988d25d-cb69-44a5-86db-58affec00a7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vote a Candidate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2b7a1f1-2bf7-45dd-9a33-b9b2f392eb04",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//button[contains(.,'Vote')]",
+      "targets": [
+        ["css=tr:nth-child(1) .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vote')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "149841ef-8027-4c03-af09-41cfd898006b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn",
+      "targets": [
+        ["css=tr:nth-child(1) .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vote')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e67cfcd-f277-4114-b693-a37448945ca9",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a00b2b3c-4525-4109-bfc7-8549e6a91cec",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9ee71ed0-9b0e-4c14-bce5-fb3516f5ead9"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
