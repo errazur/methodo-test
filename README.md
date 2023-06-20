@@ -1,3 +1,6 @@
+Cyril Valette
+Mathieu Raudin
+
 Tout d'abord, nous avons cloné le projet et rajouté la bdd.
 Afin de pouvoir accéder à la partie admin de l'application il a fallu rajouter un mot de passe crypté dans la table admin de la bdd.
 Une fois cela fait, nous avons installé php mailer ainsi que php stan sur le projet.
